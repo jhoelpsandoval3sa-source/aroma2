@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
-    <img src="img/logo.png" alt="">
+    <!-- <nav>
+    <img src="img/logo.png" alt="" class="logo">
     <h1>aroma</h1>
     <ul>
         <li><a href="#">inicio</a></li>
         <li><a href="#">menu</a></li>
-        <li><a href="#">carrito</a></li>
+        <li><a href="#">carrito ()</a></li>
         <li><a href="#">contacto</a></li>
     </ul>
-    
+    </nav> -->
+
+    <nav>
+        <button onclick="mostrarvista(`home`)">inicio</button>
+        <button onclick="mostrarvista(`menu`)">menu</button>
+        <button onclick="mostrarvista(`contact`)">contacto </button>
+    </nav>
+
+
+    <main>
+        <section id="view-home" class="view active">
+            <h2>bienvenido</h2>
+            <p>bienvenido a la cafeteria</p>
+        </section>
+        <section id="view-menu" class="view">
+            <h2>menu</h2>
+            <p>aqui va los productos</p>
+        </section>
+        <section id="view-contact" class="view">
+            <h2>contacto</h2>
+            <p>aqui va la info del contacto</p>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>elaborado por nigger</p>
+    </footer>
 </body>
 </html>
