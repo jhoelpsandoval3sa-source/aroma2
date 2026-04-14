@@ -64,3 +64,67 @@ ul li a:hover {
 .view.active {
     display: block;
 }
+
+.products-container{
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color: #333;
+}
+
+/* --------- */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    text-align: center;
+}
+
+/* MAIN más grande */
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* CUADROS */
+.view {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Solo se muestra el activo */
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+/* FOOTER simple */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
